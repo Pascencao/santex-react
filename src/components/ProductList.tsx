@@ -23,6 +23,7 @@ export function ProductList() {
   },[loading,data])
   
   return <GridWrapper>
+    <h3>Product List</h3>
     <Grid container spacing={2} >
         {productList?.map((item:IProduct,index:number)=>{
           return (<Grid item xs={4}>

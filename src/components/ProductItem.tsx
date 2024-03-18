@@ -58,7 +58,7 @@ export const ProductItem = ({item, index}: {item: IProduct, index: number})=>{
             </Select>
             : 
             <Typography variant="body2">
-            {selectedItem?.id} <Currency value={selectedItem?.price} />
+            {selectedItem?.name} <Currency value={selectedItem?.price} />
             </Typography>
           }
         </CardContent>

@@ -14,7 +14,6 @@ export const Paginator = ({totalItems, itemsPerPage, current, onChange}:IPaginat
     useEffect(()=>{
         let pages = Math.ceil(totalItems / itemsPerPage);
         let buttons = []
-        console.log(itemsPerPage, totalItems, pages)
         for(let i = 1; i <= pages; i++){
             buttons.push(i)
         }
